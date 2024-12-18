@@ -5,7 +5,7 @@ import "./HomePage.css"; // Import custom styles
 // Import images for carousel and categories
 import image1 from "../assets/img/fireworks1.jpg";
 import image2 from "../assets/img/fireworks2.jpg";
-import image3 from "../assets/img/fireworks3.jpg";
+import image3 from "../assets/img/fireworks3.jpg"
 import category1 from "../assets/img/category1.jpg";
 import category2 from "../assets/img/category2.jpg";
 import category3 from "../assets/img/category3.jpg";
@@ -106,6 +106,41 @@ function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Pagination Section */}
+      <section id="pagination" className="py-4">
+        <div className="container text-center">
+          <nav aria-label="Page navigation">
+            <ul className="pagination justify-content-center">
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li className="page-item active" aria-current="page">
+                <a className="page-link" href="#">
+                  1
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link" href="#">
+                  2
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link" href="#">
+                  3
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
 

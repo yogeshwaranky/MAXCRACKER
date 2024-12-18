@@ -1,67 +1,95 @@
 /* General styles */
 body {
-    /* background: url("../assets/img/background.jpg") no-repeat center center fixed; */
-    background-size: cover;
-    color: #5d3994;
-  }
-  
-  /* Carousel image adjustments */
+  /* background: url("../assets/img/background.jpg") no-repeat center center fixed; Uncommented for usage */
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Added fallback font */
+  color: #5d3994;
+}
+
+/* Carousel image adjustments */
+/* Carousel image adjustments */
+.carousel-inner img {
+  width: 100%;
+  height: 60vh; /* Set a fixed height for the carousel */
+  object-fit: cover; /* Cover the carousel area while maintaining focus */
+  object-position: center; /* Keep the center of the image in focus */
+  display: block; /* Ensure proper rendering */
+}
+
+
+
+/* Carousel captions */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff; /* Ensures text is visible against dark background */
+  max-width: 80%; /* Limits caption width */
+  margin: auto;
+  text-align: center;
+}
+
+/* Category cards */
+.card {
+  border: none;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background for cards */
+  color: #6f389f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow to cards */
+  border-radius: 8px; /* Smooth corners */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scales up on hover */
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.card img {
+  height: 200px; /* Fixed height for category images */
+  width: 100%; /* Ensures images cover card width */
+  object-fit: cover; /* Keeps images focused */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; /* Matches card corner radius */
+}
+
+/* Footer styles */
+footer {
+  background: linear-gradient(45deg, #2b2b2b, #1c1c1c); /* Gradient background for footer */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff; /* Footer links default to white */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff5722; /* Highlighted color on hover */
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .carousel-inner img {
-    width: 100%;
-    height: 60vh; /* Adjust height for responsiveness */
-    object-fit: cover;
+    height: 40vh; /* Reduce height on smaller screens */
   }
-  
-  /* Carousel captions */
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Category cards */
-  .card {
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
-  
+
   .card img {
-    height: 200px; /* Fixed height for category images */
-    object-fit: cover;
+    height: 150px; /* Adjust image height for category cards */
   }
-  
-  /* Footer styles */
-  footer {
-    background: linear-gradient(45deg, #2b2b2b, #1c1c1c);
+
+  .carousel-caption {
+    font-size: 0.9rem; /* Adjust caption size for smaller screens */
+    padding: 10px; /* Smaller padding for compact view */
   }
-  
-  footer a {
-    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    font-size: 0.8rem; /* Further reduce caption size on extra-small screens */
   }
-  
-  footer a:hover {
-    color: #ff5722;
-    text-decoration: underline;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .carousel-inner img {
-      height: 40vh; /* Reduce height on smaller screens */
-    }
-  
-    .card img {
-      height: 150px; /* Reduce image height for category cards */
-    }
-  
-    .carousel-caption {
-      font-size: 0.9rem; /* Adjust caption size for smaller screens */
-    }
-  }
-  
+}
