@@ -4,7 +4,11 @@ import React, { Suspense } from "react";
 import { AppProviders } from "./providers";
 import Applayout from "./Components/applayout/Applayout.component";
 
-import HomePage from './Pages/HomePage.jsx';
+import Product from './Pages/Product/Product.page.jsx'
+
+import Home from './Pages/Home/Home.page.jsx';
+
+
 
 function App() {
   return (
@@ -13,7 +17,8 @@ function App() {
       <Applayout>
         <Suspense >
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/Product" element={<Product />} />
             
           </Routes>
         </Suspense>

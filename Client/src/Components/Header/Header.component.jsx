@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/img/logo.png"; // Your detailed logo
 import adminImg from "../../assets/img/admin.webp"; // Admin avatar
+import cartIcon from "../../assets/img/cart.png"; // Cart icon (you can use a FontAwesome cart icon or your own image)
 
 export function Header(props) {
   const navigate = useNavigate();
@@ -21,14 +22,6 @@ export function Header(props) {
                   width: "150px",
                 }}
               />
-              {/* Uncomment and style if needed */}
-              {/* <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#fff" }}>
-                Max Crackers
-                <br />
-                <small style={{ fontSize: "0.9rem", color: "#ddd" }}>
-                  "Light Up Your Celebrations!"
-                </small>
-              </span> */}
             </a>
             <button
               className="navbar-toggler"
@@ -41,18 +34,14 @@ export function Header(props) {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div
-  className="collapse navbar-collapse"
-  id="navbarNav"
-  
->
-              <ul className="navbar-nav mx-auto" >
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav mx-auto">
                 {/* Navigation Links */}
                 <li className="nav-item">
-                  <a className="nav-link text-white hover:text-gray-300" href="#">Home</a>
+                  <a className="nav-link text-white hover:text-gray-300" href="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white hover:text-gray-300" href="#">Products</a>
+                  <a className="nav-link text-white hover:text-gray-300" href="/Product">Products</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white hover:text-gray-300" href="#">Gallery</a>
@@ -67,8 +56,9 @@ export function Header(props) {
                   <a className="nav-link text-white hover:text-gray-300" href="#">Contact Us</a>
                 </li>
               </ul>
+              
               {/* Admin Section */}
-              <ul className="navbar-nav ms-auto">
+              <ul className="navbar-nav ms-auto d-flex align-items-center">
                 <li className="nav-item d-flex align-items-center">
                   <a className="nav-link d-flex align-items-center text-white" href="#">
                     <img
@@ -82,6 +72,22 @@ export function Header(props) {
                       }}
                     />
                     <span className="d-none d-md-inline">Admin</span> {/* Show text only on large screens */}
+                  </a>
+                </li>
+
+                {/* Add to Cart Section */}
+                <li className="nav-item d-flex align-items-center">
+                  <a className="nav-link d-flex align-items-center text-white" href="#">
+                    <img
+                      src={cartIcon} // Use your cart icon image here
+                      alt="Cart"
+                      style={{
+                        width: "40px", // Adjust the size as needed
+                        height: "40px",
+                        marginRight: "8px",
+                      }}
+                    />
+                    <span className="d-none d-md-inline"></span> {/* Show text only on large screens */}
                   </a>
                 </li>
               </ul>

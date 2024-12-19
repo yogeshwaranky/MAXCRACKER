@@ -55,3 +55,44 @@
 .navbar-nav .nav-item:hover .nav-link {
   color: #007bff; /* Change text color on hover */
 }
+input[type="number"] {
+  width: 70px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.table-bordered {
+  border: 2px solid #ccc;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+.table th {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+}
+
+.table img {
+  width: 100px;
+  height: auto;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+table {
+  table-layout: fixed;
+}
