@@ -49,7 +49,7 @@ export function Header(props) {
               <ul className="navbar-nav mx-auto" >
                 {/* Navigation Links */}
                 <li className="nav-item">
-                  <a className="nav-link text-white hover:text-gray-300" href="#">Home</a>
+                  <a className="nav-link text-white hover:text-gray-300" href="/">Home</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white hover:text-gray-300" href="/Product">Products</a>
