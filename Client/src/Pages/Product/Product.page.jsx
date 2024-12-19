@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import '../../App.css';     
+import '../../App.css'; 
+
+
+
+
+    
+    
+    
 
 const Product = () => {
     const CrackersList= [ 
