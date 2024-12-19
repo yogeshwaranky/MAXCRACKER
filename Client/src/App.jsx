@@ -4,9 +4,10 @@ import React, { Suspense } from "react";
 import { AppProviders } from "./providers";
 import Applayout from "./Components/applayout/Applayout.component";
 
-import Product from './Pages/Product/Product.page.jsx'
+
 
 import Home from './Pages/Home/Home.page.jsx';
+import Product from './Pages/Product/Product.Page.jsx';
 
 
 
