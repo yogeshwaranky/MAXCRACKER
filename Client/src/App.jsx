@@ -7,7 +7,8 @@ import Applayout from "./Components/applayout/Applayout.component";
 
 
 import Home from './Pages/Home/Home.page.jsx';
-import Product from './Pages/Product/Product.Page.jsx';
+import Product from './Pages/Home/Product.page.jsx';
+
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <Applayout>
         <Suspense >
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home/>} />
             <Route path="/Product" element={<Product/>} />
             
           </Routes>
