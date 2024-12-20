@@ -27,7 +27,7 @@ export function Invoice() {
     <h1 style={{ textAlign:"center", }}>Tax Invoice</h1>
 <section > render is a Node specific API. You're either using this method in a browser, or your bundler is not loading react-pdf from the appropriate web build.
 
-    <div className="row">
+    <div className="row" style={{marginTop:"50px"}} >
         <div className="col text-center"><img src={logo} width="150" height="150" /></div>
         <div className="col">
             <div className="row row-cols-1">
@@ -54,16 +54,16 @@ export function Invoice() {
     </div>
 </section>
 <section>
-    <div className="row row-cols-1">
+    <div className="row row-cols-1" style={{marginTop:"30px"}}>
         <div className="col text-center">
             <h1>Max Crackers</h1>
         </div>
         <div className="col text-center"><label className="col-form-label">Door no :220, Gsquare-inifiniti phase 1 ,Parvathy avenue , Manancheri , kundrathur 600069</label></div>
     </div>
-    <div className="row">
+    <div className="row" style={{marginTop:"70px"}} > 
         <div className="col">
             <div className="table-responsive">
-                <table className="table">
+                <table className="table" >
                     <thead>
                         <tr />
                     </thead>
@@ -104,7 +104,7 @@ export function Invoice() {
         </div>
     </div>
 </section>
-<section>
+<section style={{marginTop:"70px"}}>
     <div className="table-responsive">
         <table className="table">
             <thead>
@@ -135,10 +135,17 @@ export function Invoice() {
         </table>
     </div>
     <div className="row text-end">
+        <div className="col"><label className="col-form-label">CGST</label></div>
+        <div className="col text-center"><label className="col-form-label">0%</label></div>
+    </div>
+    <div className="row text-end">
+        <div className="col"><label className="col-form-label">GST</label></div>
+        <div className="col text-center"><label className="col-form-label">0%</label></div>
+    </div>
+    <div className="row text-end">
         <div className="col"><label className="col-form-label">Total</label></div>
         <div className="col text-center"><label className="col-form-label">Rs. 38.00</label></div>
     </div>
-
 </section>
 </div>
 <button type="button" onClick={generatePDF} className="btn btn-primary btn-sm">Download Pdf</button>
