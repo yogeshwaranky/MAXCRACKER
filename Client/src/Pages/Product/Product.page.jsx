@@ -1,5 +1,5 @@
-import { useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Product = () => {
@@ -1317,85 +1317,124 @@ const Product = () => {
       }
   ]
     // Add more products here
-    
-    const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
-  const selectedProductType = queryParams.get("productType");
-
-  // State for filtering, pagination
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5;
-
-  // Filter items by product type
-  const filteredItems = CrackersList.filter(
-    (item) =>
-      !selectedProductType || item.productType === selectedProductType
-  );
-
-  // Pagination
-  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
-  const currentItems = filteredItems.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-
-  const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
-
-  return (
-    <div className="container">
-      <h2 className="text-center my-4">Products</h2>
-      <h5 className="text-center mb-4">
-        {selectedProductType ? `Category: ${selectedProductType}` : "All Products"}
-      </h5>
-
-      <div className="table-responsive">
-        <table className="table table-bordered table-hover">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Content</th>
-              <th>Price</th>
-              <th>Discount</th>
-              <th>Final Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentItems.map((item) => (
-              <tr key={item.id}>
-                <td>{item.productName}</td>
-                <td>{item.productContent}</td>
-                <td>{item.price}</td>
-                <td>{item.discount}</td>
-                <td>{item.finalPrice}</td>
+  
+    const [searchQuery, setSearchQuery] = useState(''); // State for search query
+    const [currentPage, setCurrentPage] = useState(1); // State for the current page
+    const [quantities, setQuantities] = useState({}); // State to store quantities for each product
+    const itemsPerPage = 10; // Number of items to display per page
+  
+    // Function to handle the search query change
+    const handleSearchChange = (e) => {
+      setSearchQuery(e.target.value);
+      setCurrentPage(1); // Reset to the first page when search changes
+    };
+  
+    // Filter items based on the search query
+    const filteredItems = CrackersList.filter(item =>
+      item.productName.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  
+    // Paginate the filtered items
+    const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+    const currentItems = filteredItems.slice(
+      (currentPage - 1) * itemsPerPage,
+      currentPage * itemsPerPage
+    );
+  
+    // Function to handle page change
+    const handlePageChange = (pageNumber) => {
+      setCurrentPage(pageNumber);
+    };
+  
+    // Function to handle quantity change
+    const handleQuantityChange = (e, index) => {
+      const value = Math.max(1, parseInt(e.target.value)); // Ensure quantity is at least 1
+      setQuantities(prevQuantities => ({
+        ...prevQuantities,
+        [index]: value, // Update the quantity for this specific product index
+      }));
+    };
+  
+    return (
+      <div className="container-fluid">
+        <h2 className="text-center mb-4">CRACKER LIST</h2>
+        
+        {/* Search Bar */}
+        <div className="mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search by product name..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
+        </div>
+  
+        <div className="table-responsive">
+          {/* Table */}
+          <table className="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th style={{ width: '10%' }}>Image</th>
+                <th style={{ width: '15%' }}>Name</th>
+                <th style={{ width: '15%' }}>Content</th>
+                <th style={{ width: '10%' }}>Price</th>
+                <th style={{ width: '10%' }}>Discounted Price</th>
+                <th style={{ width: '10%' }}>Final Price</th>
+                <th style={{ width: '10%' }}>Quantity</th>
+                <th style={{ width: '10%' }}>Total</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <nav>
-        <ul className="pagination justify-content-center">
-          <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
-            <button className="page-link" onClick={() => handlePageChange(currentPage - 1)}>
-              Previous
-            </button>
-          </li>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <li key={index} className={`page-item ${currentPage === index + 1 ? "active" : ""}`}>
-              <button className="page-link" onClick={() => handlePageChange(index + 1)}>
-                {index + 1}
-              </button>
+            </thead>
+            <tbody>
+              {currentItems.map((item, index) => (
+                <tr key={index}>
+                  <td><img src={item.image} alt="Cracker img or vdo" style={{ width: '100px' }} /></td>
+                  <td>{item.productName}</td>
+                  <td>{item.productContent}</td>
+                  <td>{item.price}</td>
+                  <td>{item.discount}</td>
+                  <td>{item.finalPrice}</td>
+                  <td>
+                    <input 
+                      type="number" 
+                      value={quantities[index] || 0} // Default to 1 if no quantity is set
+                      onChange={(e) => handleQuantityChange(e, index)} 
+                      style={{ width: '80px' }} 
+                
+                    />
+                  </td>
+                  <td>{((quantities[index] || 0) * item.finalPrice).toFixed(2)}</td> {/* Calculate total based on quantity */}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+  
+        {/* Pagination Controls */}
+        <nav aria-label="Page navigation">
+          <ul className="pagination justify-content-center">
+            {/* Previous Button */}
+            <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
+              <button className="page-link" onClick={() => handlePageChange(currentPage - 1)}>Previous</button>
             </li>
-          ))}
-          <li className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}>
-            <button className="page-link" onClick={() => handlePageChange(currentPage + 1)}>
-              Next
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
-};
-
-export default Product;
+            
+            {/* Page Numbers */}
+            {Array.from({ length: totalPages }, (_, index) => (
+              <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}>
+                <button className="page-link" onClick={() => handlePageChange(index + 1)}>
+                  {index + 1}
+                </button>
+              </li>
+            ))}
+            
+            {/* Next Button */}
+            <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
+              <button className="page-link" onClick={() => handlePageChange(currentPage + 1)}>Next</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
+  };
+  
+  export default Product
