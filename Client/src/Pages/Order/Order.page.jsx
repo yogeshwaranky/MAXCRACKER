@@ -77,64 +77,155 @@ const Order = () => {
           </table>
         </div>
       </section>
-
+<div>
       <section>
         <form>
           <div className="container">
-            <h1>Shipping Address</h1>
-            <div>
-              <label>Full Name</label>
-              <input
-                className="form-control"
-                type="text"
-                name="name"
-                value={shippingDetails.name}
-                onChange={handleInputChange}
-              />
+            <div className="row gy-0" style={{ paddingTop: "20px" }}>
+              <div className="col-md-6 col-xl-8">
+                <h1>Shipping Address</h1>
+              </div>
+              <div className="col-md-6 col-xl-4">
+                <div className="row">
+                  <div className="col text-center align-self-center">
+                    <input className="form-control" type="text" />
+                  </div>
+                  <div className="col">
+                    <button className="btn btn-primary" type="button">
+                      Apply Coupon
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <label>Email Address</label>
-              <input
-                className="form-control"
-                type="email"
-                name="email"
-                value={shippingDetails.email}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div>
-              <label>Phone Number</label>
-              <input
-                className="form-control"
-                type="text"
-                name="phone"
-                value={shippingDetails.phone}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div>
-              <label>Address</label>
-              <textarea
-                className="form-control"
-                name="address"
-                value={shippingDetails.address}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div>
-              <label>Zipcode</label>
-              <input
-                className="form-control"
-                type="text"
-                name="zipcode"
-                value={shippingDetails.zipcode}
-                onChange={handleInputChange}
-              />
+
+            <div className="row">
+              <div
+                className="col-md-6 col-xl-8"
+                style={{ marginLeft: "0px", marginRight: "0px" }}
+              >
+                <div className="table-responsive">
+                  <table className="table">
+                    <tbody>
+                      <tr>
+                        <td>Full Name</td>
+                        <td>
+                          <input className="form-control" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Email Address</td>
+                        <td>
+                          <input className="form-control" type="email" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Phone Number</td>
+                        <td>
+                          <input className="form-control" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Address</td>
+                        <td>
+                          <textarea className="form-control"></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Shipping Type</td>
+                        <td>
+                          <input type="radio" /> Transport Office Delivery
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>State / City / Zipcode</td>
+                        <td>
+                          <select className="form-select" style={{ marginBottom: "10px" }}>
+                            <optgroup label="This is a group">
+                              <option value="12" selected>
+                                This is item 1
+                              </option>
+                              <option value="13">This is item 2</option>
+                              <option value="14">This is item 3</option>
+                            </optgroup>
+                          </select>
+                          <select className="form-select" style={{ marginBottom: "10px" }}>
+                            <optgroup label="This is a group">
+                              <option value="12" selected>
+                                This is item 1
+                              </option>
+                              <option value="13">This is item 2</option>
+                              <option value="14">This is item 3</option>
+                            </optgroup>
+                          </select>
+                          <input className="form-control" type="text" placeholder="Enter Zipcode" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className="col-md-6 col-xl-4">
+                <div className="row gx-2 gy-3 row-cols-1">
+                  <div className="col text-end">
+                    <div className="table-responsive">
+                      <table className="table">
+                        <tbody>
+                          <tr>
+                            <td>Subtotal</td>
+                            <td>250</td>
+                          </tr>
+                          <tr>
+                            <td>Shipping Charge</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Discount</td>
+                            <td>205</td>
+                          </tr>
+                          <tr>
+                            <td>Coupon(-)</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Total</strong>
+                            </td>
+                            <td>45</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div className="col text-end">
+                    <div className="row">
+                      <div className="col">
+                        <button className="btn btn-primary" type="button">
+                          Back
+                        </button>
+                      </div>
+                      <div className="col">
+                        <button className="btn btn-primary" type="button">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                    <div className="row" style={{ paddingTop: "20px" }}>
+                      <div className="col">
+                        <button className="btn btn-primary btn-lg" type="button">
+                          Continue Shopping
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </form>
       </section>
-    </div>
+      </div>
+      </div>
   );
 };
 
