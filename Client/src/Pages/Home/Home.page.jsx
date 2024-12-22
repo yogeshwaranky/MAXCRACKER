@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HomePage.css";
+import { Link } from "react-router-dom";
 
 // Import images for carousel and categories
 import image1 from "../../assets/img/fireworks1.jpg";
@@ -146,21 +147,20 @@ function Home() {
           </div>
           <div className="row g-4">
             {displayedCategories.length > 0 ? (
-              displayedCategories.map((category, index) => (
-                <div key={index} className="col-lg-4 col-md-6">
-                  <div className="card text-center">
-                    <img
-                      src={logo}
-                      className="card-img-top"
-                      alt={category}
-                    />
-                    <div className="card-body">
-                      <h5 className="card-title">{category}</h5>
-                      <p className="card-text">Explore the {category} for your celebrations.</p>
-                    </div>
+            displayedCategories.map((category, index) => (
+              <div key={index} className="col-lg-4 col-md-6">
+                <div className="card text-center">
+                  <img src={logo} className="card-img-top" alt={category} />
+                  <div className="card-body">
+                    <h5 className="card-title">{category}</h5>
+                    <p className="card-text">Explore the {category} for your celebrations.</p>
+                    <Link to={`/Product?productType=${encodeURIComponent(category)}`} className="btn btn-primary">
+                      View Products
+                    </Link>
                   </div>
                 </div>
-              ))
+              </div>
+            ))
             ) : (
               <div className="col-12">
                 <p className="text-center">No categories found.</p>
@@ -207,6 +207,29 @@ function Home() {
           </nav>
         </div>
       </section>
+      {/* Footer */}
+      <footer className="bg-dark text-light text-center py-4">
+        <div className="container">
+          <p>&copy; 2024 Max Fireworks. All rights reserved.</p>
+          <ul className="list-inline">
+            <li className="list-inline-item">
+              <a href="#" className="text-light">
+                Privacy Policy
+              </a>
+            </li>
+            <li className="list-inline-item">
+              <a href="#" className="text-light">
+                Terms of Service
+              </a>
+            </li>
+            <li className="list-inline-item">
+              <a href="#" className="text-light">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   );
 }
