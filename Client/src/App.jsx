@@ -7,7 +7,8 @@ import Applayout from "./Components/applayout/Applayout.component";
 
 
 import Home from './Pages/Home/Home.page.jsx';
-import Product from './Pages/Home/Product.page.jsx';
+import Product from './Pages/Product/Product.page.jsx';
+import Order from './Pages/Order/Order.page.jsx';
 
 
 
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/Product" element={<Product/>} />
-            
+            <Route path="/Order" element={<Order/>} />
           </Routes>
         </Suspense>
       </Applayout>

@@ -29,32 +29,7 @@ const Order = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-md text-black bg-body">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">Max FireWorks</a>
-          <button data-bs-toggle="collapse" className="navbar-toggler" data-bs-target="#navcol-1">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navcol-1">
-            <ul className="navbar-nav mx-auto">
-              <li className="nav-item"><a className="nav-link active" href="#">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Products</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Gallery</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">About Us</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">FAQ</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
-            </ul>
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item text-center">
-                <a className="nav-link active" href="#" style={{ fontSize: 25 }}>Prasath</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#">Cart</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+     
 
       <section>
         <h1 className="text-center" style={{ paddingTop: 20 }}>Ordered Products</h1>
