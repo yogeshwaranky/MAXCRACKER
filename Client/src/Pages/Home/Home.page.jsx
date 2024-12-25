@@ -1,74 +1,77 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./HomePage.css";
 import { Link } from "react-router-dom";
+import "./HomePage.css";
 
-// Import images for carousel and categories
-import image1 from "../../assets/img/fireworks1.jpg";
-import image2 from "../../assets/img/fireworks2.jpg";
-import image3 from "../../assets/img/fireworks3.jpg"
-import category1 from "../../assets/img/category1.jpg";
-import category2 from "../../assets/img/category2.jpg";
-import category3 from "../../assets/img/category3.jpg";
-import logo from "../../assets/img/logo.png"
+import image3 from "../../assets/img/offer.jpg";
+import image1 from "../../assets/img/fireworks2.jpg";
+import image2 from "../../assets/img/giftboxes1.png"
+// Import category images
+
+
+import SPARKLERS from "../../assets/img/Catergory img/SPARKLERS.jpg";
+import cakes from "../../assets/img/Catergory img/cakes.jpg";
+import CHAKKARS from "../../assets/img/Catergory img/CHAKKARS.jpg";
+import fancyfireworks from "../../assets/img/Catergory img/fancyfireworks3.jpg";
+import GIFTBOXES from "../../assets/img/Catergory img/GIFTBOXES.jpg"
+import FLOWERPOTS from "../../assets/img/Catergory img/FLOWERPOTS1.jpg"
+import kidsspecial from "../../assets/img/Catergory img/kidsspecial1.png"
+import novelfireworks from "../../assets/img/Catergory img/novelfireworks.jpg"
+import rocket from "../../assets/img/Catergory img/rocket2.jpg"
+import  speacialshots from "../../assets/img/Catergory img/speacialshots.jpg"
+import FAMILYPACK from "../../assets/img/Catergory img/FAMILYPACK.jpg"
+import soundcrackers from "../../assets/img/Catergory img/soundcrackers.jpg"
+import comets from "../../assets/img/Catergory img/comets.jpg"
+import CONFETTI from "../../assets/img/Catergory img/CONFETTI.jpg"
+import displaycomets from "../../assets/img/Catergory img/displaycomets.jpg"
+// Map category names to their respective images
+
+
+const imagePaths = {
+  SPARKLERS,
+  cakes,
+  CHAKKARS,
+  fancyfireworks,
+  GIFTBOXES,
+  FLOWERPOTS,
+  kidsspecial,
+  novelfireworks,
+  rocket,
+  speacialshots,
+  FAMILYPACK,
+  soundcrackers,
+  comets,
+  CONFETTI,
+  displaycomets,
+};
 
 const categories = [
-  "Bijili & Chorsa Crackers",
-  "Bomb Varieties",
-  "Colour Matches",
-  "Colourful Fountains",
-  "Diwali Combo Pack",
-  "Elite Function",
-  "Fancy Novelties",
-  "Fancy Sky Shots",
-  "Flower Pots",
-  "Ground Chakkar",
-  "Kids Special",
-  "Lovely Fountains",
-  "Mega Display Series (Setout)",
-  "Multicolour Shots (Other Brand)",
-  "New Arrival",
-  "One Sound Crackers",
-  "Pandyan's 4\" Wonder Fancy",
-  "Pandyan's 2 3/4\" Fancy (3 Pcs)",
-  "Pandyan's 4.5\" Mega Display",
-  "Pandyan's 4.5\" Double Ball (2 in 1)",
-  "Pandyan's 4\" Golden Fancy (6 in 1)",
-  "Peacock Fountains",
-  "Sparklers",
-  "Special Fountains",
-  "Twinkling Star",
-  "Wonderful Repeating Shots - (Pandyan's Brand)",
+  "SPARKLERS",
+  "cakes",
+  "CHAKKARS",
+  "fancyfireworks",
+  "GIFTBOXES",
+  "FLOWERPOTS",
+  "kidsspecial",
+  "novelfireworks",
+  "rocket",
+  "speacialshots",
+  "FAMILYPACK",
+  "soundcrackers",
+  "comets",
+  "CONFETTI",
+  "displaycomets",
 ];
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
 
-  // Filter categories based on the search term
   const filteredCategories = categories.filter((category) =>
     category.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Pagination logic
-  const totalPages = Math.ceil(filteredCategories.length / itemsPerPage);
-  const displayedCategories = filteredCategories.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-
-  const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
-    setCurrentPage(1); // Reset to the first page when searching
-  };
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
   return (
     <div>
+      {/* Carousel */}
       <section id="home">
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
@@ -132,104 +135,39 @@ function Home() {
             type="text"
             className="form-control"
             placeholder="Search categories..."
-            value={searchTerm}
-            onChange={handleSearchChange}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
       </section>
 
-      {/* Categories Section */}
+      {/* Categories */}
       <section id="categories" className="py-5">
         <div className="container">
-          <div className="text-center mb-4">
-            <h2>Explore Our Categories</h2>
-            <p className="text-muted">Choose from a wide variety of spectacular fireworks.</p>
-          </div>
-          <div className="row g-4">
-            {displayedCategories.length > 0 ? (
-            displayedCategories.map((category, index) => (
-              <div key={index} className="col-lg-4 col-md-6">
+          <h2 className="text-center">Explore Our Categories</h2>
+          <div className="row g-4 mt-4">
+            {filteredCategories.map((category, index) => (
+              <div key={index} className="col-lg-3 col-md-4 col-sm-6">
                 <div className="card text-center">
-                  <img src={logo} className="card-img-top" alt={category} />
+                  <img
+                    src={imagePaths[category]}
+                    className="card-img-top"
+                    alt={category}
+                  />
                   <div className="card-body">
                     <h5 className="card-title">{category}</h5>
-                    <p className="card-text">Explore the {category} for your celebrations.</p>
-                    <Link to={`/Product?productType=${encodeURIComponent(category)}`} className="btn btn-primary">
+                    <Link
+                      to={`/products?category=${encodeURIComponent(category)}`}
+                      className="btn btn-primary"
+                    >
                       View Products
                     </Link>
                   </div>
                 </div>
               </div>
-            ))
-            ) : (
-              <div className="col-12">
-                <p className="text-center">No categories found.</p>
-              </div>
-            )}
+            ))}
           </div>
         </div>
       </section>
-
-      {/* Pagination Section */}
-      <section id="pagination" className="py-4">
-        <div className="container text-center">
-          <nav aria-label="Page navigation">
-            <ul className="pagination justify-content-center">
-              <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
-                <button
-                  className="page-link"
-                  onClick={() => handlePageChange(currentPage - 1)}
-                  aria-label="Previous"
-                >
-                  <span aria-hidden="true">&laquo;</span>
-                </button>
-              </li>
-              {Array.from({ length: totalPages }, (_, i) => (
-                <li
-                  key={i}
-                  className={`page-item ${currentPage === i + 1 ? "active" : ""}`}
-                >
-                  <button className="page-link" onClick={() => handlePageChange(i + 1)}>
-                    {i + 1}
-                  </button>
-                </li>
-              ))}
-              <li className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}>
-                <button
-                  className="page-link"
-                  onClick={() => handlePageChange(currentPage + 1)}
-                  aria-label="Next"
-                >
-                  <span aria-hidden="true">&raquo;</span>
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-      {/* Footer */}
-      <footer className="bg-dark text-light text-center py-4">
-        <div className="container">
-          <p>&copy; 2024 Max Fireworks. All rights reserved.</p>
-          <ul className="list-inline">
-            <li className="list-inline-item">
-              <a href="#" className="text-light">
-                Privacy Policy
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#" className="text-light">
-                Terms of Service
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#" className="text-light">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </div>
   );
 }

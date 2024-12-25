@@ -53,7 +53,7 @@ const Product = () => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": "Flower Pots"
+          "productType": " FLOWERPOTS"
       },
       {
           "id": 12,
@@ -63,7 +63,7 @@ const Product = () => {
           "price": 425.0,
           "discount": 340.0,
           "finalPrice": 85.0,
-          "productType": "Flower Pots"
+          "productType": "FLOWERPOTS"
       },
       {
           "id": 13,
@@ -73,7 +73,7 @@ const Product = () => {
           "price": 475.0,
           "discount": 380.0,
           "finalPrice": 95.0,
-          "productType": "Flower Pots"
+          "productType": "FLOWERPOTS"
       },
       {
           "id": 14,
@@ -83,7 +83,7 @@ const Product = () => {
           "price": 895.0,
           "discount": 716.0,
           "finalPrice": 179.0,
-          "productType": "Flower Pots"
+          "productType": "FLOWERPOTS"
       },
       {
           "id": 16,
@@ -93,7 +93,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Flower Pots"
+          "productType": "FLOWERPOTS"
       },
       {
           "id": 18,
@@ -103,7 +103,7 @@ const Product = () => {
           "price": 400.0,
           "discount": 320.0,
           "finalPrice": 80.0,
-          "productType": "Ground Chakkar"
+          "productType": "CHAKKARS"
       },
       {
           "id": 20,
@@ -113,7 +113,7 @@ const Product = () => {
           "price": 650.0,
           "discount": 520.0,
           "finalPrice": 130.0,
-          "productType": "Ground Chakkar"
+          "productType": "CHAKKARS"
       },
       {
           "id": 21,
@@ -123,7 +123,7 @@ const Product = () => {
           "price": 850.0,
           "discount": 680.0,
           "finalPrice": 170.0,
-          "productType": "Ground Chakkar"
+          "productType": "CHAKKARS"
       },
       {
           "id": 22,
@@ -133,7 +133,7 @@ const Product = () => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "Ground Chakkar"
+          "productType": "CHAKKARS"
       },
       {
           "id": 25,
@@ -143,7 +143,7 @@ const Product = () => {
           "price": 85.0,
           "discount": 68.0,
           "finalPrice": 17.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 26,
@@ -153,7 +153,7 @@ const Product = () => {
           "price": 110.0,
           "discount": 88.0,
           "finalPrice": 22.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 27,
@@ -163,7 +163,7 @@ const Product = () => {
           "price": 115.0,
           "discount": 92.0,
           "finalPrice": 23.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 29,
@@ -173,7 +173,7 @@ const Product = () => {
           "price": 195.0,
           "discount": 156.0,
           "finalPrice": 39.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 30,
@@ -183,7 +183,7 @@ const Product = () => {
           "price": 210.0,
           "discount": 168.0,
           "finalPrice": 42.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 31,
@@ -193,7 +193,7 @@ const Product = () => {
           "price": 225.0,
           "discount": 180.0,
           "finalPrice": 45.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 33,
@@ -203,7 +203,7 @@ const Product = () => {
           "price": 195.0,
           "discount": 156.0,
           "finalPrice": 39.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 34,
@@ -213,7 +213,7 @@ const Product = () => {
           "price": 210.0,
           "discount": 168.0,
           "finalPrice": 42.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 35,
@@ -223,7 +223,7 @@ const Product = () => {
           "price": 225.0,
           "discount": 180.0,
           "finalPrice": 45.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 37,
@@ -233,7 +233,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 40,

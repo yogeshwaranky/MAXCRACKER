@@ -58,6 +58,9 @@ export function Header(props) {
                   <a className="nav-link text-white hover:text-gray-300" href="/Order">Gallery</a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link text-white hover:text-gray-300" href="/Order">Qucik Shopping</a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link text-white hover:text-gray-300" href="#">About Us</a>
                 </li>
                 <li className="nav-item">
