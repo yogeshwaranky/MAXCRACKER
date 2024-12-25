@@ -9,6 +9,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/morph/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap">  
     <script>
+     window.fbAsyncInit = function () {
+    window.FB.init({
+        appId: '986417649988258', // Replace with your App ID
+        cookie: true,
+        xfbml: true,
+        version: 'v21.0',
+    });
+
+    // Check login status
+    window.FB.getLoginStatus(function (response) {
+        if (response.status === 'connected') {
+            console.log('User logged in:', response);
+            getFacebookUserData();
+        } else {
+            console.error('User not authenticated:', response);
+        }
+    });
+};
+
+// Load the SDK asynchronously
+(function (d, s, id) {
+    const fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    const js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js';
+    fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'facebook-jssdk');
+
+      </script>
+    <script>
+        
       (function() {
 
           // JavaScript snippet handling Dark/Light mode switching

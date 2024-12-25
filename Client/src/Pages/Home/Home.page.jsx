@@ -68,7 +68,6 @@ function Home() {
   const filteredCategories = categories.filter((category) =>
     category.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
   return (
     <div>
       {/* Carousel */}
@@ -143,8 +142,7 @@ function Home() {
       {/* Categories */}
       <section id="categories" className="py-5">
         <div className="container">
-          <h2 className="text-center">Explore Our Categories</h2>
-          <div className="row g-4 mt-4">
+          <div className="row g-4">
             {filteredCategories.map((category, index) => (
               <div key={index} className="col-lg-3 col-md-4 col-sm-6">
                 <div className="card text-center">
@@ -156,11 +154,11 @@ function Home() {
                   <div className="card-body">
                     <h5 className="card-title">{category}</h5>
                     <Link
-                      to={`/products?category=${encodeURIComponent(category)}`}
-                      className="btn btn-primary"
-                    >
-                      View Products
-                    </Link>
+  to={`/Product?productType=${encodeURIComponent(category)}`}
+  className="btn btn-primary"
+>
+  View Products
+</Link>
                   </div>
                 </div>
               </div>

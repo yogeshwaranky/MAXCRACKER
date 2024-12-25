@@ -13,7 +13,7 @@ const Product = () => {
           "price": 40.0,
           "discount": 32.0,
           "finalPrice": 8.0,
-          "productType": "One Sound Crackers"
+          "productType": "soundcrackers"
       },
       {
           "id": 39,
@@ -23,7 +23,7 @@ const Product = () => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "Colour Matches"
+          "productType": "novelfireworks"
       },
       {
           "id": 7,
@@ -33,7 +33,7 @@ const Product = () => {
           "price": 150.0,
           "discount": 120.0,
           "finalPrice": 30.0,
-          "productType": "One Sound Crackers"
+          "productType": "soundcrackers"
       },
       {
           "id": 8,
@@ -43,7 +43,7 @@ const Product = () => {
           "price": 175.0,
           "discount": 140.0,
           "finalPrice": 35.0,
-          "productType": "One Sound Crackers"
+          "productType": "soundcrackers"
       },
       {
           "id": 11,
@@ -243,7 +243,7 @@ const Product = () => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "Colour Matches"
+          "productType": "novelfireworks"
       },
       {
           "id": 42,
@@ -253,7 +253,7 @@ const Product = () => {
           "price": 125.0,
           "discount": 100.0,
           "finalPrice": 25.0,
-          "productType": "Twinkling Star"
+          "productType": "CONFETTI"
       },
       {
           "id": 43,
@@ -263,7 +263,7 @@ const Product = () => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": "Twinkling Star"
+          "productType": "CONFETTI"
       },
       {
           "id": 46,
@@ -273,7 +273,7 @@ const Product = () => {
           "price": 50.0,
           "discount": 40.0,
           "finalPrice": 10.0,
-          "productType": "Kids Special"
+          "productType": "kidsspecial"
       },
       {
           "id": 47,
@@ -283,7 +283,7 @@ const Product = () => {
           "price": 150.0,
           "discount": 120.0,
           "finalPrice": 30.0,
-          "productType": "Kids Special"
+          "productType": "kidsspecial"
       },
       {
           "id": 48,
@@ -293,7 +293,7 @@ const Product = () => {
           "price": 50.0,
           "discount": 40.0,
           "finalPrice": 10.0,
-          "productType": "Kids Special"
+          "productType": "kidsspecial"
       },
       {
           "id": 50,
@@ -303,7 +303,7 @@ const Product = () => {
           "price": 50.0,
           "discount": 40.0,
           "finalPrice": 10.0,
-          "productType": "Kids Special"
+          "productType": "kidsspecial"
       },
       {
           "id": 51,
@@ -313,7 +313,7 @@ const Product = () => {
           "price": 250.0,
           "discount": 200.0,
           "finalPrice": 50.0,
-          "productType": "Kids Special"
+          "productType": "kidsspecial"
       },
       {
           "id": 55,
@@ -323,7 +323,7 @@ const Product = () => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": "Bijili & Chorsa Crackers"
+          "productType": "novelfireworks"
       },
       {
           "id": 58,
@@ -333,7 +333,7 @@ const Product = () => {
           "price": 425.0,
           "discount": 340.0,
           "finalPrice": 85.0,
-          "productType": "Fancy Novelties"
+          "productType": "fancyfireworks"
       },
       {
           "id": 59,
@@ -343,7 +343,7 @@ const Product = () => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "Fancy Novelties"
+          "productType": "fancyfireworks"
       },
       {
           "id": 61,
@@ -353,7 +353,7 @@ const Product = () => {
           "price": 475.0,
           "discount": 380.0,
           "finalPrice": 95.0,
-          "productType": "Elite Function"
+          "productType": "novelfireworks"
       },
       {
           "id": 63,
@@ -363,7 +363,7 @@ const Product = () => {
           "price": 625.0,
           "discount": 500.0,
           "finalPrice": 125.0,
-          "productType": "Elite Function"
+          "productType": "rocket"
       },
       {
           "id": 64,
@@ -373,7 +373,7 @@ const Product = () => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "Elite Function"
+          "productType": "kidsspecial"
       },
       {
           "id": 65,
@@ -383,7 +383,7 @@ const Product = () => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "Elite Function"
+          "productType": "kidsspecial"
       },
       {
           "id": 67,
@@ -393,7 +393,7 @@ const Product = () => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "Elite Function"
+          "productType": "kidsspecial"
       },
       {
           "id": 68,
@@ -403,7 +403,7 @@ const Product = () => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "Elite Function"
+          "productType": "kidsspecial"
       },
       {
           "id": 70,
@@ -413,7 +413,7 @@ const Product = () => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 72,
@@ -423,7 +423,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 73,
@@ -433,7 +433,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 75,
@@ -443,7 +443,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 76,
@@ -453,7 +453,7 @@ const Product = () => {
           "price": 850.0,
           "discount": 680.0,
           "finalPrice": 170.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 79,
@@ -523,7 +523,7 @@ const Product = () => {
           "price": 275.0,
           "discount": 220.0,
           "finalPrice": 55.0,
-          "productType": "One Sound Crackers"
+          "productType": "soundcrackers"
       },
       {
           "id": 15,
@@ -533,7 +533,7 @@ const Product = () => {
           "price": 1245.0,
           "discount": 996.0,
           "finalPrice": 249.0,
-          "productType": "Flower Pots"
+          "productType": "FLOWERPOTS"
       },
       {
           "id": 19,
@@ -543,7 +543,7 @@ const Product = () => {
           "price": 625.0,
           "discount": 500.0,
           "finalPrice": 125.0,
-          "productType": "Ground Chakkar"
+          "productType": "CHAKKARS"
       },
       {
           "id": 24,
@@ -553,7 +553,7 @@ const Product = () => {
           "price": 75.0,
           "discount": 60.0,
           "finalPrice": 15.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 88,
@@ -583,7 +583,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 94,
@@ -593,7 +593,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 95,
@@ -603,7 +603,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 97,
@@ -613,7 +613,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 98,
@@ -623,7 +623,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 101,
@@ -633,7 +633,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Peacock Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 102,
@@ -643,7 +643,7 @@ const Product = () => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "Peacock Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 105,
@@ -653,7 +653,7 @@ const Product = () => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "Lovely  Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 106,
@@ -663,7 +663,7 @@ const Product = () => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "Lovely  Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 107,
@@ -673,7 +673,7 @@ const Product = () => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "Lovely  Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 110,
@@ -683,7 +683,7 @@ const Product = () => {
           "price": 250.0,
           "discount": 200.0,
           "finalPrice": 50.0,
-          "productType": "Bomb Varaites"
+          "productType": "soundcrackers"
       },
       {
           "id": 111,
@@ -693,7 +693,7 @@ const Product = () => {
           "price": 500.0,
           "discount": 400.0,
           "finalPrice": 100.0,
-          "productType": "Bomb Varaites"
+          "productType": "soundcrackers"
       },
       {
           "id": 112,
@@ -703,7 +703,7 @@ const Product = () => {
           "price": 550.0,
           "discount": 440.0,
           "finalPrice": 110.0,
-          "productType": "Bomb Varaites"
+          "productType": "soundcrackers"
       },
       {
           "id": 115,
@@ -713,7 +713,7 @@ const Product = () => {
           "price": 175.0,
           "discount": 140.0,
           "finalPrice": 35.0,
-          "productType": "Fancy Sky Shots"
+          "productType": "fancyfireworks"
       },
       {
           "id": 116,
@@ -723,7 +723,7 @@ const Product = () => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "Fancy Sky Shots"
+          "productType": "fancyfireworks"
       },
       {
           "id": 118,
@@ -733,7 +733,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Fancy Sky Shots"
+          "productType": "fancyfireworks"
       },
       {
           "id": 119,
@@ -743,7 +743,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Fancy Sky Shots"
+          "productType": "fancyfireworks"
       },
       {
           "id": 122,
@@ -753,7 +753,7 @@ const Product = () => {
           "price": 1375.0,
           "discount": 1100.0,
           "finalPrice": 275.0,
-          "productType": "Pandyan's 2 3/4\" Fancy ( 3 Pcs )"
+          "productType": "fancyfireworks"
       },
       {
           "id": 124,
@@ -763,7 +763,7 @@ const Product = () => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "Pandyan\"s 4\" Golden Fancy ( 6 in 1 )"
+          "productType": "fancyfireworks"
       },
       {
           "id": 125,
@@ -773,7 +773,7 @@ const Product = () => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "Pandyan\"s 4\" Golden Fancy ( 6 in 1 )"
+          "productType": "fancyfireworks"
       },
       {
           "id": 127,
@@ -783,7 +783,7 @@ const Product = () => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "Pandyan\"s 4\" Golden Fancy ( 6 in 1 )"
+          "productType": "fancyfireworks"
       },
       {
           "id": 129,
@@ -793,7 +793,7 @@ const Product = () => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "Pandyan\"s 4\" Golden Fancy ( 6 in 1 )"
+          "productType": "fancyfireworks"
       },
       {
           "id": 131,
@@ -803,7 +803,7 @@ const Product = () => {
           "price": 1300.0,
           "discount": 1040.0,
           "finalPrice": 260.0,
-          "productType": "Pandyan''s 4'' Wonder Fancy"
+          "productType": "fancyfireworks"
       },
       {
           "id": 133,
@@ -813,7 +813,7 @@ const Product = () => {
           "price": 1300.0,
           "discount": 1040.0,
           "finalPrice": 260.0,
-          "productType": "Pandyan''s 4'' Wonder Fancy"
+          "productType": "fancyfireworks"
       },
       {
           "id": 136,
@@ -823,7 +823,7 @@ const Product = () => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "Pandyan's s  4.5 \" Double Ball (2 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 137,
@@ -833,7 +833,7 @@ const Product = () => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "Pandyan's s  4.5 \" Double Ball (2 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 139,
@@ -843,7 +843,7 @@ const Product = () => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "Pandyan's s  4.5 \" Double Ball (2 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 140,
@@ -853,7 +853,7 @@ const Product = () => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "Pandyan's s  4.5 \" Double Ball (2 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 143,
@@ -863,7 +863,7 @@ const Product = () => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "Pandyan's 4.5\" Mega Display"
+          "productType": "displaycomets"
       },
       {
           "id": 144,
@@ -873,7 +873,7 @@ const Product = () => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "Pandyan's 4.5\" Mega Display"
+          "productType": "displaycomets"
       },
       {
           "id": 146,
@@ -883,7 +883,7 @@ const Product = () => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "Pandyan's 4.5\" Mega Display"
+          "productType": "displaycomets"
       },
       {
           "id": 147,
@@ -893,7 +893,7 @@ const Product = () => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "Pandyan's 4.5\" Mega Display"
+          "productType": "displaycomets"
       },
       {
           "id": 150,
@@ -903,7 +903,7 @@ const Product = () => {
           "price": 8000.0,
           "discount": 6400.0,
           "finalPrice": 1600.0,
-          "productType": "Wonderful Repeating Shots - ( Pandyan's Brand )"
+          "productType": "cakes"
       },
       {
           "id": 151,
@@ -913,7 +913,7 @@ const Product = () => {
           "price": 15000.0,
           "discount": 12000.0,
           "finalPrice": 3000.0,
-          "productType": "Wonderful Repeating Shots - ( Pandyan's Brand )"
+          "productType": "cakes"
       },
       {
           "id": 154,
@@ -923,7 +923,7 @@ const Product = () => {
           "price": 3800.0,
           "discount": 3040.0,
           "finalPrice": 760.0,
-          "productType": "Multicolour Shots ( Other Brand )"
+          "productType": "cakes"
       },
       {
           "id": 155,
@@ -933,7 +933,7 @@ const Product = () => {
           "price": 7100.0,
           "discount": 5680.0,
           "finalPrice": 1420.0,
-          "productType": "Multicolour Shots ( Other Brand )"
+          "productType": "cakes"
       },
       {
           "id": 158,
@@ -943,7 +943,7 @@ const Product = () => {
           "price": 17500.0,
           "discount": 14000.0,
           "finalPrice": 3500.0,
-          "productType": "Mega Display Series ( Setout )"
+          "productType": "cakes"
       },
       {
           "id": 159,
@@ -953,7 +953,7 @@ const Product = () => {
           "price": 19000.0,
           "discount": 15200.0,
           "finalPrice": 3800.0,
-          "productType": "Mega Display Series ( Setout )"
+          "productType": "cakes"
       },
       {
           "id": 6,
@@ -963,7 +963,7 @@ const Product = () => {
           "price": 65.0,
           "discount": 52.0,
           "finalPrice": 13.0,
-          "productType": "One Sound Crackers"
+          "productType": "soundcrackers"
       },
       {
           "id": 28,
@@ -973,7 +973,7 @@ const Product = () => {
           "price": 185.0,
           "discount": 148.0,
           "finalPrice": 37.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 32,
@@ -983,7 +983,7 @@ const Product = () => {
           "price": 185.0,
           "discount": 148.0,
           "finalPrice": 37.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 36,
@@ -993,7 +993,7 @@ const Product = () => {
           "price": 725.0,
           "discount": 580.0,
           "finalPrice": 145.0,
-          "productType": "Sparklers"
+          "productType": "SPARKLERS"
       },
       {
           "id": 44,
@@ -1003,7 +1003,7 @@ const Product = () => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "Twinkling Star"
+          "productType": "novelfireworks"
       },
       {
           "id": 49,
@@ -1013,7 +1013,7 @@ const Product = () => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": "Kids Special"
+          "productType": "kidsspecial"
       },
       {
           "id": 53,
@@ -1023,7 +1023,7 @@ const Product = () => {
           "price": 145.0,
           "discount": 116.0,
           "finalPrice": 29.0,
-          "productType": "Bijili & Chorsa Crackers"
+          "productType": "novelfireworks"
       },
       {
           "id": 56,
@@ -1033,7 +1033,7 @@ const Product = () => {
           "price": 725.0,
           "discount": 580.0,
           "finalPrice": 145.0,
-          "productType": "Bijili & Chorsa Crackers"
+          "productType": "novelfireworks"
       },
       {
           "id": 62,
@@ -1043,7 +1043,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Elite Function"
+          "productType": "novelfireworks"
       },
       {
           "id": 66,
@@ -1053,7 +1053,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Elite Function"
+          "productType": "novelfireworks "
       },
       {
           "id": 71,
@@ -1063,7 +1063,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 74,
@@ -1073,7 +1073,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 77,
@@ -1083,7 +1083,7 @@ const Product = () => {
           "price": 250.0,
           "discount": 200.0,
           "finalPrice": 50.0,
-          "productType": "Colourful Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 82,
@@ -1123,7 +1123,7 @@ const Product = () => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 96,
@@ -1133,7 +1133,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 99,
@@ -1143,7 +1143,7 @@ const Product = () => {
           "price": 900.0,
           "discount": 720.0,
           "finalPrice": 180.0,
-          "productType": "Special Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 103,
@@ -1153,7 +1153,7 @@ const Product = () => {
           "price": 2250.0,
           "discount": 1800.0,
           "finalPrice": 450.0,
-          "productType": "Peacock Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 108,
@@ -1163,7 +1163,7 @@ const Product = () => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "Lovely  Fountains"
+          "productType": "kidsspecial"
       },
       {
           "id": 113,
@@ -1173,7 +1173,7 @@ const Product = () => {
           "price": 1125.0,
           "discount": 900.0,
           "finalPrice": 225.0,
-          "productType": "Bomb Varaites"
+          "productType": "soundcrackers"
       },
       {
           "id": 117,
@@ -1183,7 +1183,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Fancy Sky Shots"
+          "productType": "fancyfireworks"
       },
       {
           "id": 121,
@@ -1193,7 +1193,7 @@ const Product = () => {
           "price": 950.0,
           "discount": 760.0,
           "finalPrice": 190.0,
-          "productType": "Pandyan's 2 3/4\" Fancy ( 3 Pcs )"
+          "productType": "speacialshots"
       },
       {
           "id": 126,
@@ -1203,7 +1203,7 @@ const Product = () => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "Pandyan\"s 4\" Golden Fancy ( 6 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 128,
@@ -1213,7 +1213,7 @@ const Product = () => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "Pandyan\"s 4\" Golden Fancy ( 6 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 132,
@@ -1223,7 +1223,7 @@ const Product = () => {
           "price": 1300.0,
           "discount": 1040.0,
           "finalPrice": 260.0,
-          "productType": "Pandyan''s 4'' Wonder Fancy"
+          "productType": "speacialshots"
       },
       {
           "id": 135,
@@ -1233,7 +1233,7 @@ const Product = () => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "Pandyan's s  4.5 \" Double Ball (2 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 138,
@@ -1243,7 +1243,7 @@ const Product = () => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "Pandyan's s  4.5 \" Double Ball (2 in 1 )"
+          "productType": "speacialshots"
       },
       {
           "id": 142,
@@ -1253,7 +1253,7 @@ const Product = () => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "Pandyan's 4.5\" Mega Display"
+          "productType": "displaycomets"
       },
       {
           "id": 145,
@@ -1263,7 +1263,7 @@ const Product = () => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "Pandyan's 4.5\" Mega Display"
+          "productType": "displaycomets"
       },
       {
           "id": 149,
@@ -1273,7 +1273,7 @@ const Product = () => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "Wonderful Repeating Shots - ( Pandyan's Brand )"
+          "productType": "cakes"
       },
       {
           "id": 153,
@@ -1283,7 +1283,7 @@ const Product = () => {
           "price": 1900.0,
           "discount": 1520.0,
           "finalPrice": 380.0,
-          "productType": "Multicolour Shots ( Other Brand )"
+          "productType": "comets"
       },
       {
           "id": 157,
@@ -1293,7 +1293,7 @@ const Product = () => {
           "price": 12500.0,
           "discount": 10000.0,
           "finalPrice": 2500.0,
-          "productType": "Mega Display Series ( Setout )"
+          "productType": "comets"
       },
       {
           "id": 2,
@@ -1303,7 +1303,7 @@ const Product = () => {
           "price": 25000.0,
           "discount": 20000.0,
           "finalPrice": 5000.0,
-          "productType": "Diwali Combo Pack "
+          "productType": "FAMILYPACK "
       },
       {
           "id": 3,
@@ -1313,7 +1313,7 @@ const Product = () => {
           "price": 35000.0,
           "discount": 28000.0,
           "finalPrice": 7000.0,
-          "productType": "Diwali Combo Pack "
+          "productType": "FAMILYPACK  "
       }
   ]
   const [searchQuery, setSearchQuery] = useState("");
