@@ -88,7 +88,7 @@ const Order = () => {
               <div className="col-md-6 col-xl-4">
                 <div className="row">
                   <div className="col text-center align-self-center">
-                    <input className="form-control" type="text" />
+                    <input className="form-control" type="text" placeholder='Enter Coupon code' />
                   </div>
                   <div className="col">
                     <button className="btn btn-primary" type="button">

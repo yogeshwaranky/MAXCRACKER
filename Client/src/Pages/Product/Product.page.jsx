@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../../assets/img/logo.png"; // Your detailed logo
 
 const Product = () => {
   const CrackersList = [
@@ -1389,7 +1390,7 @@ const Product = () => {
               <tr key={index}>
                 <td>
                   <img
-                    src={item.image}
+                    src={logo}
                     alt="Cracker img or vdo"
                     style={{ width: "100px" }}
                   />
