@@ -25,7 +25,7 @@ export function Invoice() {
     return <>
     <div ref={printRef}>
     <h1 style={{ textAlign:"center", }}>Tax Invoice</h1>
-<section > render is a Node specific API. You're either using this method in a browser, or your bundler is not loading react-pdf from the appropriate web build.
+<section > 
 
     <div className="row" style={{marginTop:"50px"}} >
         <div className="col text-center"><img src={logo} width="150" height="150" /></div>
