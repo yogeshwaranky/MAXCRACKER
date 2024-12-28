@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation,useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../../assets/img/logo.png"; // Your detailed logo
 
 const Product = ({ cart, setCart }) => {
   const CrackersList = [
@@ -1400,7 +1401,11 @@ const Product = ({ cart, setCart }) => {
             {currentItems.map((item, index) => (
               <tr key={index}>
                 <td>
-                  <img src={item.image} alt="Cracker" style={{ width: "100px" }} />
+                  <img
+                    src={item.image}
+                    alt="Cracker img or vdo"
+                    style={{ width: "100px" }}
+                  />
                 </td>
                 <td>{item.productName}</td>
                 <td>{item.productContent}</td>

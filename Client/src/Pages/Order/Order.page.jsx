@@ -55,28 +55,27 @@ const Order = ({ cart, setCart }) => {
           </table>
         </div>
       </section>
-
-      <div>
-        <section>
-          <form>
-            <div className="container">
-              <div className="row gy-0" style={{ paddingTop: "20px" }}>
-                <div className="col-md-6 col-xl-8">
-                  <h1>Shipping Address</h1>
-                </div>
-                <div className="col-md-6 col-xl-4">
-                  <div className="row">
-                    <div className="col text-center align-self-center">
-                      <input className="form-control" type="text" />
-                    </div>
-                    <div className="col">
-                      <button className="btn btn-primary" type="button">
-                        Apply Coupon
-                      </button>
-                    </div>
+<div>
+      <section>
+        <form>
+          <div className="container">
+            <div className="row gy-0" style={{ paddingTop: "20px" }}>
+              <div className="col-md-6 col-xl-8">
+                <h1>Shipping Address</h1>
+              </div>
+              <div className="col-md-6 col-xl-4">
+                <div className="row">
+                  <div className="col text-center align-self-center">
+                    <input className="form-control" type="text" />
+                  </div>
+                  <div className="col">
+                    <button className="btn btn-primary" type="button">
+                      Apply Coupon
+                    </button>
                   </div>
                 </div>
               </div>
+            </div>
 
               <div className="row">
                 <div
