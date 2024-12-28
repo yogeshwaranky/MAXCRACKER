@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation,useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Product = () => {
+const Product = ({ cart, setCart }) => {
   const CrackersList = [
     
       {
@@ -1316,21 +1316,25 @@ const Product = () => {
           "productType": "FAMILYPACK  "
       }
   ]
+ 
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [quantities, setQuantities] = useState({});
   const itemsPerPage = 10;
+  const navigate = useNavigate();
 
-  // Retrieve the productType from the URL query parameter
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const selectedProductType = queryParams.get("productType");
 
-  // Filter items based on the productType and search query
+  const { category } = location.state || {};  // Retrieve category passed through state
+
+  // Filter products based on the selected productType or category
   const filteredItems = CrackersList.filter(
     (item) =>
       (!selectedProductType || item.productType === selectedProductType) &&
-      item.productName.toLowerCase().includes(searchQuery.toLowerCase())
+      item.productName.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      (!category || item.productType === category) // Filter by category if passed
   );
 
   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
@@ -1341,7 +1345,7 @@ const Product = () => {
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
-    setCurrentPage(1);
+    setCurrentPage(1); // Reset to the first page when the search query changes
   };
 
   const handlePageChange = (pageNumber) => {
@@ -1355,6 +1359,14 @@ const Product = () => {
       [index]: value,
     }));
   };
+
+  const handleProceedToCheckout = () => {
+    const selectedItems = CrackersList.filter((item) => quantities[item.id] > 0);
+    setCart(selectedItems);
+    navigate("/Order");
+  };
+
+  const totalItemsInCart = Object.values(quantities).reduce((total, qty) => total + qty, 0);
 
   return (
     <div className="container-fluid">
@@ -1388,11 +1400,7 @@ const Product = () => {
             {currentItems.map((item, index) => (
               <tr key={index}>
                 <td>
-                  <img
-                    src={item.image}
-                    alt="Cracker img or vdo"
-                    style={{ width: "100px" }}
-                  />
+                  <img src={item.image} alt="Cracker" style={{ width: "100px" }} />
                 </td>
                 <td>{item.productName}</td>
                 <td>{item.productContent}</td>
@@ -1402,12 +1410,12 @@ const Product = () => {
                 <td>
                   <input
                     type="number"
-                    value={quantities[index] || 0}
-                    onChange={(e) => handleQuantityChange(e, index)}
+                    value={quantities[item.id] || 0}
+                    onChange={(e) => handleQuantityChange(e, item.id)}
                     style={{ width: "80px" }}
                   />
                 </td>
-                <td>{((quantities[index] || 0) * item.finalPrice).toFixed(2)}</td>
+                <td>{((quantities[item.id] || 0) * item.finalPrice).toFixed(2)}</td>
               </tr>
             ))}
           </tbody>
@@ -1427,9 +1435,7 @@ const Product = () => {
           {Array.from({ length: totalPages }, (_, index) => (
             <li
               key={index}
-              className={`page-item ${
-                currentPage === index + 1 ? "active" : ""
-              }`}
+              className={`page-item ${currentPage === index + 1 ? "active" : ""}`}
             >
               <button
                 className="page-link"
@@ -1440,9 +1446,7 @@ const Product = () => {
             </li>
           ))}
           <li
-            className={`page-item ${
-              currentPage === totalPages ? "disabled" : ""
-            }`}
+            className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}
           >
             <button
               className="page-link"
@@ -1453,6 +1457,14 @@ const Product = () => {
           </li>
         </ul>
       </nav>
+
+      <button
+        className="btn btn-primary"
+        onClick={handleProceedToCheckout}
+        disabled={totalItemsInCart === 0}
+      >
+        Proceed to Checkout
+      </button>
     </div>
   );
 };

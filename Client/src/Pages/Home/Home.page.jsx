@@ -138,7 +138,6 @@ function Home() {
           />
         </div>
       </section>
-
       {/* Categories */}
       <section id="categories" className="py-5">
         <div className="container">
@@ -154,11 +153,14 @@ function Home() {
                   <div className="card-body">
                     <h5 className="card-title">{category}</h5>
                     <Link
-  to={`/Product?productType=${encodeURIComponent(category)}`}
-  className="btn btn-primary"
->
-  View Products
-</Link>
+        key={index}
+        to={`/Product?productType=${category}`}
+        className="btn btn-primary m-2"
+      >
+        View {category}
+      </Link>
+
+
                   </div>
                 </div>
               </div>
