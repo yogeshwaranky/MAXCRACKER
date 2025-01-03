@@ -13,7 +13,8 @@ const Product = ({ cart, setCart }) => {
           "price": 40.0,
           "discount": 32.0,
           "finalPrice": 8.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers",
+          "productQty": 0
       },
       {
           "id": 39,
@@ -23,7 +24,8 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks",
+          "productQty": 0
       },
       {
           "id": 7,
@@ -33,7 +35,8 @@ const Product = ({ cart, setCart }) => {
           "price": 150.0,
           "discount": 120.0,
           "finalPrice": 30.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers",
+          "productQty": 0
       },
       {
           "id": 8,
@@ -43,7 +46,8 @@ const Product = ({ cart, setCart }) => {
           "price": 175.0,
           "discount": 140.0,
           "finalPrice": 35.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers",
+          "productQty": 0
       },
       {
           "id": 11,
@@ -53,7 +57,8 @@ const Product = ({ cart, setCart }) => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": " FLOWERPOTS"
+          "productType": " FLOWERPOTS",
+          "productQty": 0
       },
       {
           "id": 12,
@@ -63,7 +68,8 @@ const Product = ({ cart, setCart }) => {
           "price": 425.0,
           "discount": 340.0,
           "finalPrice": 85.0,
-          "productType": "FLOWERPOTS"
+          "productType": "FLOWERPOTS",
+          "productQty": 0
       },
       {
           "id": 13,
@@ -73,7 +79,8 @@ const Product = ({ cart, setCart }) => {
           "price": 475.0,
           "discount": 380.0,
           "finalPrice": 95.0,
-          "productType": "FLOWERPOTS"
+          "productType": "FLOWERPOTS",
+          "productQty": 0
       },
       {
           "id": 14,
@@ -83,7 +90,8 @@ const Product = ({ cart, setCart }) => {
           "price": 895.0,
           "discount": 716.0,
           "finalPrice": 179.0,
-          "productType": "FLOWERPOTS"
+          "productType": "FLOWERPOTS",
+          "productQty": 0
       },
       {
           "id": 16,
@@ -93,7 +101,8 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "FLOWERPOTS"
+          "productType": "FLOWERPOTS",
+          "productQty": 0
       },
       {
           "id": 18,
@@ -103,7 +112,8 @@ const Product = ({ cart, setCart }) => {
           "price": 400.0,
           "discount": 320.0,
           "finalPrice": 80.0,
-          "productType": "CHAKKARS"
+          "productType": "CHAKKARS",
+          "productQty": 0
       },
       {
           "id": 20,
@@ -113,7 +123,8 @@ const Product = ({ cart, setCart }) => {
           "price": 650.0,
           "discount": 520.0,
           "finalPrice": 130.0,
-          "productType": "CHAKKARS"
+          "productType": "CHAKKARS",
+          "productQty": 0
       },
       {
           "id": 21,
@@ -123,7 +134,8 @@ const Product = ({ cart, setCart }) => {
           "price": 850.0,
           "discount": 680.0,
           "finalPrice": 170.0,
-          "productType": "CHAKKARS"
+          "productType": "CHAKKARS",
+          "productQty": 0
       },
       {
           "id": 22,
@@ -133,7 +145,8 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "CHAKKARS"
+          "productType": "CHAKKARS",
+          "productQty": 0
       },
       {
           "id": 25,
@@ -143,7 +156,8 @@ const Product = ({ cart, setCart }) => {
           "price": 85.0,
           "discount": 68.0,
           "finalPrice": 17.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS",
+          "productQty": 0
       },
       {
           "id": 26,
@@ -153,7 +167,8 @@ const Product = ({ cart, setCart }) => {
           "price": 110.0,
           "discount": 88.0,
           "finalPrice": 22.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS",
+          "productQty": 0
       },
       {
           "id": 27,
@@ -163,7 +178,8 @@ const Product = ({ cart, setCart }) => {
           "price": 115.0,
           "discount": 92.0,
           "finalPrice": 23.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS",
+          "productQty": 0
       },
       {
           "id": 29,
@@ -173,7 +189,8 @@ const Product = ({ cart, setCart }) => {
           "price": 195.0,
           "discount": 156.0,
           "finalPrice": 39.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS",
+          "productQty": 0
       },
       {
           "id": 30,
@@ -183,7 +200,8 @@ const Product = ({ cart, setCart }) => {
           "price": 210.0,
           "discount": 168.0,
           "finalPrice": 42.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS",
+          "productQty": 0
       },
       {
           "id": 31,
@@ -193,7 +211,7 @@ const Product = ({ cart, setCart }) => {
           "price": 225.0,
           "discount": 180.0,
           "finalPrice": 45.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 33,
@@ -203,7 +221,7 @@ const Product = ({ cart, setCart }) => {
           "price": 195.0,
           "discount": 156.0,
           "finalPrice": 39.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 34,
@@ -213,7 +231,7 @@ const Product = ({ cart, setCart }) => {
           "price": 210.0,
           "discount": 168.0,
           "finalPrice": 42.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 35,
@@ -223,7 +241,7 @@ const Product = ({ cart, setCart }) => {
           "price": 225.0,
           "discount": 180.0,
           "finalPrice": 45.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 37,
@@ -233,7 +251,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 40,
@@ -243,7 +261,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks","productQty": 0
       },
       {
           "id": 42,
@@ -253,7 +271,7 @@ const Product = ({ cart, setCart }) => {
           "price": 125.0,
           "discount": 100.0,
           "finalPrice": 25.0,
-          "productType": "CONFETTI"
+          "productType": "CONFETTI","productQty": 0
       },
       {
           "id": 43,
@@ -263,7 +281,7 @@ const Product = ({ cart, setCart }) => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": "CONFETTI"
+          "productType": "CONFETTI","productQty": 0
       },
       {
           "id": 46,
@@ -273,7 +291,7 @@ const Product = ({ cart, setCart }) => {
           "price": 50.0,
           "discount": 40.0,
           "finalPrice": 10.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 47,
@@ -283,7 +301,7 @@ const Product = ({ cart, setCart }) => {
           "price": 150.0,
           "discount": 120.0,
           "finalPrice": 30.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 48,
@@ -293,7 +311,7 @@ const Product = ({ cart, setCart }) => {
           "price": 50.0,
           "discount": 40.0,
           "finalPrice": 10.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 50,
@@ -303,7 +321,7 @@ const Product = ({ cart, setCart }) => {
           "price": 50.0,
           "discount": 40.0,
           "finalPrice": 10.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 51,
@@ -313,7 +331,7 @@ const Product = ({ cart, setCart }) => {
           "price": 250.0,
           "discount": 200.0,
           "finalPrice": 50.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 55,
@@ -323,7 +341,7 @@ const Product = ({ cart, setCart }) => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks","productQty": 0
       },
       {
           "id": 58,
@@ -333,7 +351,7 @@ const Product = ({ cart, setCart }) => {
           "price": 425.0,
           "discount": 340.0,
           "finalPrice": 85.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 59,
@@ -343,7 +361,7 @@ const Product = ({ cart, setCart }) => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 61,
@@ -353,7 +371,7 @@ const Product = ({ cart, setCart }) => {
           "price": 475.0,
           "discount": 380.0,
           "finalPrice": 95.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks","productQty": 0
       },
       {
           "id": 63,
@@ -363,7 +381,7 @@ const Product = ({ cart, setCart }) => {
           "price": 625.0,
           "discount": 500.0,
           "finalPrice": 125.0,
-          "productType": "rocket"
+          "productType": "rocket","productQty": 0
       },
       {
           "id": 64,
@@ -373,7 +391,7 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 65,
@@ -383,7 +401,7 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 67,
@@ -393,7 +411,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 68,
@@ -403,7 +421,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 70,
@@ -413,7 +431,7 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 72,
@@ -423,7 +441,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 73,
@@ -433,7 +451,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 75,
@@ -443,7 +461,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 76,
@@ -453,7 +471,7 @@ const Product = ({ cart, setCart }) => {
           "price": 850.0,
           "discount": 680.0,
           "finalPrice": 170.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 79,
@@ -463,7 +481,7 @@ const Product = ({ cart, setCart }) => {
           "price": 500.0,
           "discount": 400.0,
           "finalPrice": 100.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 80,
@@ -473,7 +491,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1225.0,
           "discount": 980.0,
           "finalPrice": 245.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 81,
@@ -483,7 +501,7 @@ const Product = ({ cart, setCart }) => {
           "price": 600.0,
           "discount": 480.0,
           "finalPrice": 120.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 83,
@@ -493,7 +511,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 84,
@@ -503,7 +521,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 85,
@@ -513,7 +531,7 @@ const Product = ({ cart, setCart }) => {
           "price": 900.0,
           "discount": 720.0,
           "finalPrice": 180.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 9,
@@ -523,7 +541,7 @@ const Product = ({ cart, setCart }) => {
           "price": 275.0,
           "discount": 220.0,
           "finalPrice": 55.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers","productQty": 0
       },
       {
           "id": 15,
@@ -533,7 +551,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1245.0,
           "discount": 996.0,
           "finalPrice": 249.0,
-          "productType": "FLOWERPOTS"
+          "productType": "FLOWERPOTS","productQty": 0
       },
       {
           "id": 19,
@@ -543,7 +561,7 @@ const Product = ({ cart, setCart }) => {
           "price": 625.0,
           "discount": 500.0,
           "finalPrice": 125.0,
-          "productType": "CHAKKARS"
+          "productType": "CHAKKARS","productQty": 0
       },
       {
           "id": 24,
@@ -553,7 +571,7 @@ const Product = ({ cart, setCart }) => {
           "price": 75.0,
           "discount": 60.0,
           "finalPrice": 15.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 88,
@@ -563,7 +581,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 89,
@@ -573,7 +591,7 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 93,
@@ -583,7 +601,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 94,
@@ -593,7 +611,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 95,
@@ -603,7 +621,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 97,
@@ -613,7 +631,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 98,
@@ -623,7 +641,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 101,
@@ -633,7 +651,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 102,
@@ -643,7 +661,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 105,
@@ -653,7 +671,7 @@ const Product = ({ cart, setCart }) => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 106,
@@ -663,7 +681,7 @@ const Product = ({ cart, setCart }) => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 107,
@@ -673,7 +691,7 @@ const Product = ({ cart, setCart }) => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 110,
@@ -683,7 +701,7 @@ const Product = ({ cart, setCart }) => {
           "price": 250.0,
           "discount": 200.0,
           "finalPrice": 50.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers","productQty": 0
       },
       {
           "id": 111,
@@ -693,7 +711,7 @@ const Product = ({ cart, setCart }) => {
           "price": 500.0,
           "discount": 400.0,
           "finalPrice": 100.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers","productQty": 0
       },
       {
           "id": 112,
@@ -703,7 +721,7 @@ const Product = ({ cart, setCart }) => {
           "price": 550.0,
           "discount": 440.0,
           "finalPrice": 110.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers","productQty": 0
       },
       {
           "id": 115,
@@ -713,7 +731,7 @@ const Product = ({ cart, setCart }) => {
           "price": 175.0,
           "discount": 140.0,
           "finalPrice": 35.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 116,
@@ -723,7 +741,7 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 118,
@@ -733,7 +751,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 119,
@@ -743,7 +761,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 122,
@@ -753,7 +771,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1375.0,
           "discount": 1100.0,
           "finalPrice": 275.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 124,
@@ -763,7 +781,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 125,
@@ -773,7 +791,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 127,
@@ -783,7 +801,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 129,
@@ -793,7 +811,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 131,
@@ -803,7 +821,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1300.0,
           "discount": 1040.0,
           "finalPrice": 260.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 133,
@@ -813,7 +831,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1300.0,
           "discount": 1040.0,
           "finalPrice": 260.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 136,
@@ -823,7 +841,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 137,
@@ -833,7 +851,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 139,
@@ -843,7 +861,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 140,
@@ -853,7 +871,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 143,
@@ -863,7 +881,7 @@ const Product = ({ cart, setCart }) => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "displaycomets"
+          "productType": "displaycomets","productQty": 0
       },
       {
           "id": 144,
@@ -873,7 +891,7 @@ const Product = ({ cart, setCart }) => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "displaycomets"
+          "productType": "displaycomets","productQty": 0
       },
       {
           "id": 146,
@@ -883,7 +901,7 @@ const Product = ({ cart, setCart }) => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "displaycomets"
+          "productType": "displaycomets","productQty": 0
       },
       {
           "id": 147,
@@ -893,7 +911,7 @@ const Product = ({ cart, setCart }) => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "displaycomets"
+          "productType": "displaycomets","productQty": 0
       },
       {
           "id": 150,
@@ -903,7 +921,7 @@ const Product = ({ cart, setCart }) => {
           "price": 8000.0,
           "discount": 6400.0,
           "finalPrice": 1600.0,
-          "productType": "cakes"
+          "productType": "cakes","productQty": 0
       },
       {
           "id": 151,
@@ -913,7 +931,7 @@ const Product = ({ cart, setCart }) => {
           "price": 15000.0,
           "discount": 12000.0,
           "finalPrice": 3000.0,
-          "productType": "cakes"
+          "productType": "cakes","productQty": 0
       },
       {
           "id": 154,
@@ -923,7 +941,7 @@ const Product = ({ cart, setCart }) => {
           "price": 3800.0,
           "discount": 3040.0,
           "finalPrice": 760.0,
-          "productType": "cakes"
+          "productType": "cakes","productQty": 0
       },
       {
           "id": 155,
@@ -933,7 +951,7 @@ const Product = ({ cart, setCart }) => {
           "price": 7100.0,
           "discount": 5680.0,
           "finalPrice": 1420.0,
-          "productType": "cakes"
+          "productType": "cakes","productQty": 0
       },
       {
           "id": 158,
@@ -943,7 +961,7 @@ const Product = ({ cart, setCart }) => {
           "price": 17500.0,
           "discount": 14000.0,
           "finalPrice": 3500.0,
-          "productType": "cakes"
+          "productType": "cakes","productQty": 0
       },
       {
           "id": 159,
@@ -953,7 +971,7 @@ const Product = ({ cart, setCart }) => {
           "price": 19000.0,
           "discount": 15200.0,
           "finalPrice": 3800.0,
-          "productType": "cakes"
+          "productType": "cakes","productQty": 0
       },
       {
           "id": 6,
@@ -963,7 +981,7 @@ const Product = ({ cart, setCart }) => {
           "price": 65.0,
           "discount": 52.0,
           "finalPrice": 13.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers","productQty": 0
       },
       {
           "id": 28,
@@ -973,7 +991,7 @@ const Product = ({ cart, setCart }) => {
           "price": 185.0,
           "discount": 148.0,
           "finalPrice": 37.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 32,
@@ -983,7 +1001,7 @@ const Product = ({ cart, setCart }) => {
           "price": 185.0,
           "discount": 148.0,
           "finalPrice": 37.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 36,
@@ -993,7 +1011,7 @@ const Product = ({ cart, setCart }) => {
           "price": 725.0,
           "discount": 580.0,
           "finalPrice": 145.0,
-          "productType": "SPARKLERS"
+          "productType": "SPARKLERS","productQty": 0
       },
       {
           "id": 44,
@@ -1003,7 +1021,7 @@ const Product = ({ cart, setCart }) => {
           "price": 750.0,
           "discount": 600.0,
           "finalPrice": 150.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks","productQty": 0
       },
       {
           "id": 49,
@@ -1013,7 +1031,7 @@ const Product = ({ cart, setCart }) => {
           "price": 300.0,
           "discount": 240.0,
           "finalPrice": 60.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 53,
@@ -1023,7 +1041,7 @@ const Product = ({ cart, setCart }) => {
           "price": 145.0,
           "discount": 116.0,
           "finalPrice": 29.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks","productQty": 0
       },
       {
           "id": 56,
@@ -1033,7 +1051,7 @@ const Product = ({ cart, setCart }) => {
           "price": 725.0,
           "discount": 580.0,
           "finalPrice": 145.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks","productQty": 0
       },
       {
           "id": 62,
@@ -1043,7 +1061,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "novelfireworks"
+          "productType": "novelfireworks","productQty": 0
       },
       {
           "id": 66,
@@ -1053,7 +1071,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "novelfireworks "
+          "productType": "novelfireworks ","productQty": 0
       },
       {
           "id": 71,
@@ -1063,7 +1081,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 74,
@@ -1073,7 +1091,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 77,
@@ -1083,7 +1101,7 @@ const Product = ({ cart, setCart }) => {
           "price": 250.0,
           "discount": 200.0,
           "finalPrice": 50.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 82,
@@ -1093,7 +1111,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 86,
@@ -1103,7 +1121,7 @@ const Product = ({ cart, setCart }) => {
           "price": 900.0,
           "discount": 720.0,
           "finalPrice": 180.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 87,
@@ -1113,7 +1131,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1100.0,
           "discount": 880.0,
           "finalPrice": 220.0,
-          "productType": "New Arrival"
+          "productType": "New Arrival","productQty": 0
       },
       {
           "id": 92,
@@ -1123,7 +1141,7 @@ const Product = ({ cart, setCart }) => {
           "price": 800.0,
           "discount": 640.0,
           "finalPrice": 160.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 96,
@@ -1133,7 +1151,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 99,
@@ -1143,7 +1161,7 @@ const Product = ({ cart, setCart }) => {
           "price": 900.0,
           "discount": 720.0,
           "finalPrice": 180.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 103,
@@ -1153,7 +1171,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2250.0,
           "discount": 1800.0,
           "finalPrice": 450.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 108,
@@ -1163,7 +1181,7 @@ const Product = ({ cart, setCart }) => {
           "price": 700.0,
           "discount": 560.0,
           "finalPrice": 140.0,
-          "productType": "kidsspecial"
+          "productType": "kidsspecial","productQty": 0
       },
       {
           "id": 113,
@@ -1173,7 +1191,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1125.0,
           "discount": 900.0,
           "finalPrice": 225.0,
-          "productType": "soundcrackers"
+          "productType": "soundcrackers","productQty": 0
       },
       {
           "id": 117,
@@ -1183,7 +1201,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "fancyfireworks"
+          "productType": "fancyfireworks","productQty": 0
       },
       {
           "id": 121,
@@ -1193,7 +1211,7 @@ const Product = ({ cart, setCart }) => {
           "price": 950.0,
           "discount": 760.0,
           "finalPrice": 190.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 126,
@@ -1203,7 +1221,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 128,
@@ -1213,7 +1231,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1200.0,
           "discount": 960.0,
           "finalPrice": 240.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 132,
@@ -1223,7 +1241,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1300.0,
           "discount": 1040.0,
           "finalPrice": 260.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 135,
@@ -1233,7 +1251,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 138,
@@ -1243,7 +1261,7 @@ const Product = ({ cart, setCart }) => {
           "price": 2000.0,
           "discount": 1600.0,
           "finalPrice": 400.0,
-          "productType": "speacialshots"
+          "productType": "speacialshots","productQty": 0
       },
       {
           "id": 142,
@@ -1253,7 +1271,7 @@ const Product = ({ cart, setCart }) => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "displaycomets"
+          "productType": "displaycomets","productQty": 0
       },
       {
           "id": 145,
@@ -1263,7 +1281,7 @@ const Product = ({ cart, setCart }) => {
           "price": 3750.0,
           "discount": 3000.0,
           "finalPrice": 750.0,
-          "productType": "displaycomets"
+          "productType": "displaycomets","productQty": 0
       },
       {
           "id": 149,
@@ -1273,7 +1291,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1000.0,
           "discount": 800.0,
           "finalPrice": 200.0,
-          "productType": "cakes"
+          "productType": "cakes","productQty": 0
       },
       {
           "id": 153,
@@ -1283,7 +1301,7 @@ const Product = ({ cart, setCart }) => {
           "price": 1900.0,
           "discount": 1520.0,
           "finalPrice": 380.0,
-          "productType": "comets"
+          "productType": "comets","productQty": 0
       },
       {
           "id": 157,
@@ -1293,7 +1311,7 @@ const Product = ({ cart, setCart }) => {
           "price": 12500.0,
           "discount": 10000.0,
           "finalPrice": 2500.0,
-          "productType": "comets"
+          "productType": "comets","productQty": 0
       },
       {
           "id": 2,
@@ -1303,7 +1321,7 @@ const Product = ({ cart, setCart }) => {
           "price": 25000.0,
           "discount": 20000.0,
           "finalPrice": 5000.0,
-          "productType": "FAMILYPACK "
+          "productType": "FAMILYPACK ","productQty": 0
       },
       {
           "id": 3,
@@ -1313,13 +1331,14 @@ const Product = ({ cart, setCart }) => {
           "price": 35000.0,
           "discount": 28000.0,
           "finalPrice": 7000.0,
-          "productType": "FAMILYPACK  "
+          "productType": "FAMILYPACK  ","productQty": 0
       }
   ]
  
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [quantities, setQuantities] = useState({});
+  const [selectedItems, setSelectedItems] = useState([]);
+  const [products, setProducts] = useState(CrackersList);
   const itemsPerPage = 10;
   const navigate = useNavigate();
 
@@ -1329,20 +1348,8 @@ const Product = ({ cart, setCart }) => {
 
   const { category } = location.state || {};  // Retrieve category passed through state
 
-  // Filter products based on the selected productType or category
-  const filteredItems = CrackersList.filter(
-    (item) =>
-      (!selectedProductType || item.productType === selectedProductType) &&
-      item.productName.toLowerCase().includes(searchQuery.toLowerCase()) &&
-      (!category || item.productType === category) // Filter by category if passed
-  );
-
-  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
-  const currentItems = filteredItems.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-
+  
+  
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
     setCurrentPage(1); // Reset to the first page when the search query changes
@@ -1352,21 +1359,41 @@ const Product = ({ cart, setCart }) => {
     setCurrentPage(pageNumber);
   };
 
-  const handleQuantityChange = (e, index) => {
+  const handleQuantityChange = (e, item) => {   
     const value = Math.max(1, parseInt(e.target.value));
-    setQuantities((prevQuantities) => ({
-      ...prevQuantities,
-      [index]: value,
-    }));
+    setProducts(products.map(product => product.id === item.id ? { ...product, productQty: value } : product ));
   };
+  const returnProductById =(id) =>{
+    return products.filter((item)=> item.id === id)
+  }
+  let filteredItems=[];
+  let currentItems=[];
+  filteredItems = products.filter(
+    (item) =>
+      (!selectedProductType || item.productType === selectedProductType) &&
+      item.productName.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      (!category || item.productType === category) // Filter by category if passed
+  );
+  
+   currentItems = filteredItems.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+  useEffect(()=>{
+    // Filter products based on the selected productType or category
+   
 
-  const handleProceedToCheckout = () => {
-    const selectedItems = CrackersList.filter((item) => quantities[item.id] > 0);
+
+    const selectedItems = products.filter((item) => item.productQty > 0);
     setCart(selectedItems);
+  },[products,setProducts])
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+  const handleProceedToCheckout = () => {
+   
     navigate("/Order");
   };
 
-  const totalItemsInCart = Object.values(quantities).reduce((total, qty) => total + qty, 0);
+  
 
   return (
     <div className="container-fluid">
@@ -1414,12 +1441,12 @@ const Product = ({ cart, setCart }) => {
                 <td>
                   <input
                     type="number"
-                    value={quantities[item.id] || 0}
-                    onChange={(e) => handleQuantityChange(e, item.id)}
+                    value={returnProductById(item.id).productQty}
+                    onChange={(e) => handleQuantityChange(e, item)}
                     style={{ width: "80px" }}
                   />
                 </td>
-                <td>{((quantities[item.id] || 0) * item.finalPrice).toFixed(2)}</td>
+                <td>{((item.productQty) * item.finalPrice).toFixed(2)}</td>
               </tr>
             ))}
           </tbody>
@@ -1465,7 +1492,7 @@ const Product = ({ cart, setCart }) => {
       <button
         className="btn btn-primary"
         onClick={handleProceedToCheckout}
-        disabled={totalItemsInCart === 0}
+         disabled={cart.length === 0}
       >
         Proceed to Checkout
       </button>

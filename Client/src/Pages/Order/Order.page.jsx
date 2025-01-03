@@ -16,7 +16,7 @@ const Order = ({ cart, setCart }) => {
 
   // Updated calculateTotal function to account for quantity and final price
   const calculateTotal = () => {
-    return cart.reduce((total, item) => total + item.finalPrice * item.qty, 0);
+    return cart.reduce((total, item) => total + item.finalPrice * item.productQty, 0);
   };
 
   return (
@@ -42,8 +42,8 @@ const Order = ({ cart, setCart }) => {
                   </td>
                   <td>{item.productName}</td>
                   <td>{item.productContent}</td>
-                  <td>{item.qty}</td>
-                  <td>Rs {item.finalPrice * item.qty}</td>
+                  <td>{item.productQty}</td>
+                  <td>Rs {item.finalPrice * item.productQty}</td>
                 </tr>
               ))}
               <tr>
