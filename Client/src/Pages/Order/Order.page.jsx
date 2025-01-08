@@ -13,11 +13,16 @@ const Order = ({ cart, setCart }) => {
     const { name, value } = e.target;
     setShippingDetails({ ...shippingDetails, [name]: value });
   };
-
-  // Updated calculateTotal function to account for quantity and final price
   const calculateTotal = () => {
-    return cart.reduce((total, item) => total + item.finalPrice * item.productQty, 0);
+    return cart.reduce((total, item) => {
+      const validQty = item.productQty >= 1 ? item.productQty : 0;
+      console.log(`Item: ${JSON.stringify(item)}, ValidQty: ${validQty}, Subtotal: ${item.finalPrice * validQty}`);
+      return total + (item.finalPrice * validQty);
+    }, 0);
   };
+  
+  console.log(`Total: ${calculateTotal()}`);
+  
 
   return (
     <div>
