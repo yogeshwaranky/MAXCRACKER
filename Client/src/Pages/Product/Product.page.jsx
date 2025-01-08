@@ -1336,7 +1336,7 @@ const Product = ({ cart, setCart }) => {
   ]
  
  
-  const [searchQuery, setSearchQuery] = useState("");
+ const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [products, setProducts] = useState(CrackersList);
   const itemsPerPage = 10;
