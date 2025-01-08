@@ -1335,9 +1335,9 @@ const Product = ({ cart, setCart }) => {
       }
   ]
  
+ 
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedItems, setSelectedItems] = useState([]);
   const [products, setProducts] = useState(CrackersList);
   const itemsPerPage = 10;
   const navigate = useNavigate();
@@ -1345,11 +1345,8 @@ const Product = ({ cart, setCart }) => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const selectedProductType = queryParams.get("productType");
+  const { category } = location.state || {};
 
-  const { category } = location.state || {};  // Retrieve category passed through state
-
-  
-  
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
     setCurrentPage(1); // Reset to the first page when the search query changes
@@ -1359,46 +1356,46 @@ const Product = ({ cart, setCart }) => {
     setCurrentPage(pageNumber);
   };
 
-  const handleQuantityChange = (e, item) => {   
+  const handleQuantityChange = (e, item) => {
     const value = Math.max(1, parseInt(e.target.value));
-    setProducts(products.map(product => product.id === item.id ? { ...product, productQty: value } : product ));
+    setProducts((prevProducts) =>
+      prevProducts.map((product) =>
+        product.id === item.id ? { ...product, productQty: value } : product
+      )
+    );
   };
-  const returnProductById =(id) =>{
-    return products.filter((item)=> item.id === id)
-  }
-  let filteredItems=[];
-  let currentItems=[];
-  filteredItems = products.filter(
-    (item) =>
-      (!selectedProductType || item.productType === selectedProductType) &&
-      item.productName.toLowerCase().includes(searchQuery.toLowerCase()) &&
-      (!category || item.productType === category) // Filter by category if passed
-  );
-  
-   currentItems = filteredItems.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-  useEffect(()=>{
-    // Filter products based on the selected productType or category
-   
 
+  const groupProductsByType = (products) => {
+    return products.reduce((acc, product) => {
+      if (!acc[product.productType]) {
+        acc[product.productType] = [];
+      }
+      acc[product.productType].push(product);
+      return acc;
+    }, {});
+  };
 
+  const groupedProducts = groupProductsByType(
+    products.filter(
+      (item) =>
+        (!selectedProductType || item.productType === selectedProductType) &&
+        item.productName.toLowerCase().includes(searchQuery.toLowerCase()) &&
+        (!category || item.productType === category)
+    )
+  );
+
+  useEffect(() => {
     const selectedItems = products.filter((item) => item.productQty > 0);
     setCart(selectedItems);
-  },[products,setProducts])
-  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+  }, [products, setCart]);
+
   const handleProceedToCheckout = () => {
-   
     navigate("/Order");
   };
-
-  
 
   return (
     <div className="container-fluid">
       <h2 className="text-center mb-4">CRACKER LIST</h2>
-
       <div className="mb-3">
         <input
           type="text"
@@ -1408,94 +1405,64 @@ const Product = ({ cart, setCart }) => {
           onChange={handleSearchChange}
         />
       </div>
-
-      <div className="table-responsive">
-        <table className="table table-striped table-bordered table-hover">
-          <thead>
-            <tr>
-              <th style={{ width: "10%" }}>Image</th>
-              <th style={{ width: "15%" }}>Name</th>
-              <th style={{ width: "15%" }}>Content</th>
-              <th style={{ width: "10%" }}>Price</th>
-              <th style={{ width: "10%" }}>Discounted Price</th>
-              <th style={{ width: "10%" }}>Final Price</th>
-              <th style={{ width: "10%" }}>Quantity</th>
-              <th style={{ width: "10%" }}>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentItems.map((item, index) => (
-              <tr key={index}>
-                <td>
-                  <img
-                    src={item.image}
-                    alt="Cracker img or vdo"
-                    style={{ width: "100px" }}
-                  />
-                </td>
-                <td>{item.productName}</td>
-                <td>{item.productContent}</td>
-                <td>{item.price}</td>
-                <td>{item.discount}</td>
-                <td>{item.finalPrice}</td>
-                <td>
-                  <input
-                    type="number"
-                    value={returnProductById(item.id).productQty}
-                    onChange={(e) => handleQuantityChange(e, item)}
-                    style={{ width: "80px" }}
-                  />
-                </td>
-                <td>{((item.productQty) * item.finalPrice).toFixed(2)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      {Object.keys(groupedProducts).map((type) => (
+        <div key={type} className="product-type-section">
+          <h3 className="text-primary">{type.toUpperCase()}</h3>
+          <div className="table-responsive">
+            <table className="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th style={{ width: "10%" }}>Image</th>
+                  <th style={{ width: "15%" }}>Name</th>
+                  <th style={{ width: "15%" }}>Content</th>
+                  <th style={{ width: "10%" }}>Price</th>
+                  <th style={{ width: "10%" }}>Discounted Price</th>
+                  <th style={{ width: "10%" }}>Final Price</th>
+                  <th style={{ width: "10%" }}>Quantity</th>
+                  <th style={{ width: "10%" }}>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupedProducts[type].map((item, index) => (
+                  <tr key={index}>
+                    <td>
+                      <img
+                        src={item.image || logo}
+                        alt={item.productName}
+                        style={{ width: "100px" }}
+                      />
+                    </td>
+                    <td>{item.productName}</td>
+                    <td>{item.productContent}</td>
+                    <td>{item.price}</td>
+                    <td>{item.discount}</td>
+                    <td>{item.finalPrice}</td>
+                    <td>
+                      <input
+                        type="number"
+                        className="form-control"
+                        min="1"
+                        value={item.productQty || ""}
+                        onChange={(e) => handleQuantityChange(e, item)}
+                      />
+                    </td>
+                    <td>{(item.productQty || 0) * item.finalPrice}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ))}
+      <div className="d-flex justify-content-end align-items-center mt-3">
+        <button
+          className="btn btn-success"
+          onClick={handleProceedToCheckout}
+          disabled={cart.length === 0}
+        >
+          Proceed to Checkout
+        </button>
       </div>
-
-      <nav aria-label="Page navigation">
-        <ul className="pagination justify-content-center">
-          <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
-            <button
-              className="page-link"
-              onClick={() => handlePageChange(currentPage - 1)}
-            >
-              Previous
-            </button>
-          </li>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <li
-              key={index}
-              className={`page-item ${currentPage === index + 1 ? "active" : ""}`}
-            >
-              <button
-                className="page-link"
-                onClick={() => handlePageChange(index + 1)}
-              >
-                {index + 1}
-              </button>
-            </li>
-          ))}
-          <li
-            className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}
-          >
-            <button
-              className="page-link"
-              onClick={() => handlePageChange(currentPage + 1)}
-            >
-              Next
-            </button>
-          </li>
-        </ul>
-      </nav>
-
-      <button
-        className="btn btn-primary"
-        onClick={handleProceedToCheckout}
-         disabled={cart.length === 0}
-      >
-        Proceed to Checkout
-      </button>
     </div>
   );
 };
