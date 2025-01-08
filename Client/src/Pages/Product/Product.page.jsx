@@ -1357,13 +1357,14 @@ const Product = ({ cart, setCart }) => {
   };
 
   const handleQuantityChange = (e, item) => {
-    const value = Math.max(1, parseInt(e.target.value));
+    const value = Math.max(0, parseInt(e.target.value) || 0); // Allow zero
     setProducts((prevProducts) =>
       prevProducts.map((product) =>
         product.id === item.id ? { ...product, productQty: value } : product
       )
     );
   };
+  
 
   const groupProductsByType = (products) => {
     return products.reduce((acc, product) => {
@@ -1438,15 +1439,16 @@ const Product = ({ cart, setCart }) => {
                     <td>{item.discount}</td>
                     <td>{item.finalPrice}</td>
                     <td>
-                      <input
-                        type="number"
-                        className="form-control"
-                        min="1"
-                        value={item.productQty || ""}
-                        onChange={(e) => handleQuantityChange(e, item)}
-                      />
-                    </td>
+  <input
+    type="number"
+    className="form-control"
+    min="0" // Allow zero as the minimum
+    value={item.productQty} // Ensure the value is directly tied to productQty
+    onChange={(e) => handleQuantityChange(e, item)}
+  />
+</td>
                     <td>{(item.productQty || 0) * item.finalPrice}</td>
+
                   </tr>
                 ))}
               </tbody>
